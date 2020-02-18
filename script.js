@@ -13,3 +13,11 @@ function defaultParameterValue(a, b = 100) {
 function returnArgumentsArray() {
 	return Array.from(arguments)
 }
+
+//Вариант 4
+function exampleFunction(a = 5, b = 6){
+	return a + b;
+}
+function returnFnResult(fn) {
+	return fn();
+}
