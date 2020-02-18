@@ -8,3 +8,8 @@ function returnFirstArgument(arg){
 function defaultParameterValue(a, b = 100) {
 	return (a + b);
 }
+
+//Вариант 3
+function returnArgumentsArray() {
+	return Array.from(arguments)
+}
