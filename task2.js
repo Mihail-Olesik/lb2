@@ -13,3 +13,10 @@ function map(array, fn) {
 	return arr;
 } 
 
+//Вариант 3
+function reduce(array, fn, initial = 0) {
+	prev = 0;	
+	for(i = 0; i < array.length; i++)
+		prev = fn(prev, array[i]);
+	return prev;
+} 
