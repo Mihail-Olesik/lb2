@@ -5,3 +5,11 @@ function forEach(array, fn) {
 		fn(array[i]);
 } 
 
+//Вариант 2
+function map(array, fn) {
+	arr = [];
+	for(i = 0; i < array.length; i++)
+		arr.push(fn(array[i]));
+	return arr;
+} 
+
