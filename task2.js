@@ -20,3 +20,11 @@ function reduce(array, fn, initial = 0) {
 		prev = fn(prev, array[i]);
 	return prev;
 } 
+
+//Вариант 4
+function slice (array, start, end = array.length) {
+	arr = []
+	for(i = start; i < end; i++)
+		arr.push(array[i]);
+	return arr;
+}
