@@ -17,9 +17,18 @@ function hasProperty(obj, prop){
 function getEnumProps(obj){
 	let a = [];
 	for (i in obj){
-		if(Number.isInteger(i)){
-			a.push(i)
+		if(Number.isInteger(obj[i])){
+			a.push(obj[i])
 		}
+	}
+	return a
+}
+
+//Вариант 4
+function upperProps(obj){
+	let a = [];
+	for (i in obj){
+		a.push(i.toUpperCase())
 	}
 	return a
 }
